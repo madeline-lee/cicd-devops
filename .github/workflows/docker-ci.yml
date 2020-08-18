@@ -21,7 +21,7 @@ jobs:
 
       # Build and push container image.
       - name: Build and push container image
-        uses: docker/build-push-action@v1
+        uses: docker/push-action@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
