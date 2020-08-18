@@ -19,6 +19,8 @@ jobs:
   
   push:
     
+    runs-on: ubuntu-latest
+    
     steps:
     - name: Push Docker images
       uses: docker/build-push-action@v1
