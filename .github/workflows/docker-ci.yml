@@ -19,6 +19,6 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           dockerfile: Dockerfile
-          repository: jxlee97/repository
+          repository: jxlee97/nodejs-api
           tag_with_ref: true
 
