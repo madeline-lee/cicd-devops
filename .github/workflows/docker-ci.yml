@@ -7,13 +7,18 @@ on:
     branches: [ master ]
 
 jobs:
+  
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
 
  build-and-release:
   runs-on: ubuntu-latest
   steps:
-    # Check out source code.
-    - name: Check out source code
-      uses: actions/checkout@v2
 
     # Build and push container image.
     - name: Build and push container image
@@ -21,6 +26,5 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: ${{ env.IMAGE_REPOSITORY }}
         tag_with_ref: true
         tag_with_sha: true # sha-${GITHUB_SHA::7}
