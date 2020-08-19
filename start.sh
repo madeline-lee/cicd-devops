@@ -1,4 +1,4 @@
 #!/bin/bash
-
-cd /madeline-lee/nodejs-api
+pwd
+cd /home/user
 node app.js
