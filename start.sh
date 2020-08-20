@@ -1,4 +1,4 @@
   #!/bin/bash
 
-cd /home/jxlee97
+cd /home/user
 node app.js
