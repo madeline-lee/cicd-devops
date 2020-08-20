@@ -13,11 +13,11 @@ This step will build the root Dockerfile and tage the image as nodejs-api, log i
 * repository: Docker repository to tag the image with.
 * tag with ref: Tag the image according to the Git Reference. For the master branch, the image tag will be "latest".
 
-
 ## Step 2: Send message
 This step will send 2 telegram notification messages, the first message is the default message, which states that the Docker Image CI workflow has been triggered by the user. 
-
+* Eg: madeline-lee/nodejs-api/Docker Image CI triggered by madeline-lee (push)
 The second message states the type of event that has triggered the workflow. 
+* Eg: The push event has been triggered.
 
 ### Input parameters
 * telegram_to: Unique identifier for this chat.
