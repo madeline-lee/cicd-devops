@@ -4,7 +4,7 @@
 The Docker Image CI workflow will build and push the image to dockerhub and send a telegram message to the bot @devops2020_bot for every commit made.
 
 ## Step 1: Build and push docker image
-This step will build the root Dockerfile and tage the image as nodejs-api, log into Docker Hub using Github Secrets and push the image to the Docker Hub repository.
+This step will build the root Dockerfile and tag the image as nodejs-api, log into Docker Hub using Github Secrets and push the image to the Docker Hub repository.
 
 ### Input parameters
 * username: Username used to log in to a Docker registry. 
